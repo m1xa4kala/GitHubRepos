@@ -2,6 +2,10 @@ import axios from 'axios'
 import { setIsFetching, setRepos } from '../reducers/reposReducer'
 
 export function getRepos(searchQuery = `${encodeURIComponent('stars:>0')}`) {
+  if (searchQuery == '') {
+    searchQuery = `${encodeURIComponent('stars:>0')}`
+  }
+
   return async (dispath) => {
     dispath(setIsFetching(true))
     const res = await axios.get(
