@@ -1,7 +1,8 @@
 import React from 'react'
-import Pagination from '../components/Pagination/Pagination'
-import Repos from '../components/Repos/Repos'
-import Search from '../components/Search/Search'
+import Search from '../../components/Search/Search'
+import Repos from '../../components/Repos/Repos'
+import Pagination from '../../components/Pagination/Pagination'
+import './main.scss'
 
 export default function Main() {
   return (
