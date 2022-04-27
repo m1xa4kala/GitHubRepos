@@ -18,11 +18,15 @@ html {
   font-size: 62.5%;
 }
 
+@import './assets/styles/vars';
+@import './assets/styles/common';
+
 body {
   font-size: 2rem;
-  background-color: #fff;
-  color: #000;
+  background-color: $white;
+  color: $black;
   font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue',
     Arial, 'Noto Sans', 'Liberation Sans', sans-serif, 'Apple Color Emoji',
     'Segoe UI Emoji', 'Segoe UI Symbol', 'Noto Color Emoji';
+  font-weight: 400;
 }
