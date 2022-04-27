@@ -1,0 +1,31 @@
+.repo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 2rem 3rem 1rem;
+  border-radius: 1rem;
+  box-shadow: 0rem 1rem 3rem rgba(216, 216, 216, 0.548);
+}
+
+.repo__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+
+.repo__name {
+  font-size: 2.2rem;
+  font-weight: 500;
+}
+
+.repo__stars {
+  display: flex;
+  align-items: center;
+}
+
+.repo__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
