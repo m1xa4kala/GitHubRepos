@@ -12,9 +12,26 @@
   background-color: $orange;
   color: $white;
   cursor: pointer;
-  transition: background-color 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+
+  &--page {
+    background-color: $white;
+    color: $black;
+    padding: 1.1em 1.4em;
+  }
+
+  &--active {
+    background-color: darken($orange, 5%);
+    color: $white;
+    padding: 1.1em 1.4em;
+  }
 
   &:hover {
     background-color: darken($orange, 5%);
+  }
+
+  &--page:hover {
+    background-color: $orange;
+    color: $white;
   }
 }

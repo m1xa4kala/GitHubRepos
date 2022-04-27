@@ -1,0 +1,10 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination__pages {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}

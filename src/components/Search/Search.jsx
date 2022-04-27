@@ -1,9 +1,7 @@
-import React, { useState } from 'react'
+import React from 'react'
 import './search.scss'
 
-export default function Search({ searchHandler }) {
-  const [searchValue, setSearchValue] = useState('')
-
+export default function Search({ searchHandler, searchValue, setSearchValue }) {
   return (
     <div className="search">
       <input
@@ -17,7 +15,7 @@ export default function Search({ searchHandler }) {
         }
       />
       <button
-        className="search__button btn"
+        className="btn search__button"
         onClick={() => searchHandler(searchValue)}
       >
         Search

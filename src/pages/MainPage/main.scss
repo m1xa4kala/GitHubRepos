@@ -1,5 +1,7 @@
 .main {
   padding: 3rem 0;
+  display: flex;
+  flex-direction: column;
 }
 
 .main__search {
@@ -8,4 +10,9 @@
 
 .main__repos {
   margin-bottom: 3rem;
+}
+
+.main__pagination {
+  width: 100%;
+  align-self: center;
 }
