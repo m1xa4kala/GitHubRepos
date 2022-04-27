@@ -8,10 +8,12 @@ module.exports = {
   entry: ['@babel/polyfill', '/src/index.js'],
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[hash].bundle.js',
+    filename: '[name].[fullhash].bundle.js',
+    publicPath: '/',
   },
   devServer: {
     port: 3000,
+    historyApiFallback: true,
   },
   resolve: {
     extensions: ['.js', '.jsx'],

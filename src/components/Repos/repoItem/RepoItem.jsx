@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import github from '../../../assets/images/github.png'
 import star from '../../../assets/images/star.png'
 import './repo.scss'
@@ -7,7 +8,9 @@ export default function RepoItem({ repo }) {
   return (
     <div className="repo">
       <div className="repo__header">
-        <h3 className="repo__name">{repo.name}</h3>
+        <h3 className="repo__name">
+          <Link to={`/repo/${repo.owner.login}/${repo.name}`}>{repo.name}</Link>
+        </h3>
         <div className="repo__stars">
           <img width={30} src={star} alt="star" />
           &nbsp;
